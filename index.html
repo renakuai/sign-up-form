@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="script.js" defer></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class = "main-container">
+    <div id = "left-container">
+      <div id = "logo">
+        <img src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png" id="odin-logo">
+      </div>
+      <div id = "left-body">
+        <p>This is not a real online service, but you know you need something like this in your life.</p>
+        <p>Sign up now to get started!</p>
+      </div>
+    </div>
+    <div id = "right-container">
+      <div id ="right-header">
+        Sign up now!
+      </div>
+      <div id ="right-body">
+        <form novalidate>
+           <!--first name-->
+           <div class ="form-group">
+               <div class ="label">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" placeholder="First name" name="renakuai">
+               </div>
+              <div class ="label">
+              <!--last name-->
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" placeholder="Last name" name="renakuai">
+               </div>
+           </div>
+          <!--email-->
+          <div class ="form-group">
+            <div class ="required-space">
+              <label for="email">Email:*</label>
+              <input type="email" id="email" placeholder="Email" name="renakuai" required>
+              <span class = "email-error" aria-live="polite"></span>
+            </div>
+          <!--phone-->
+            <div class ="label">
+              <label for="phone">Phone number:</label>
+              <input type="tel" id="phone" placeholder="Phone" name="renakuai" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+            </div>
+          </div>
+          <!--password-->
+          <div class ="form-group">
+            <div class ="required-space">
+              <label for="password">Password:*</label>
+                <input type="password" id="password" class="confirm" placeholder="Password" name="renakuai" required minlength="8" required>
+                <span class = "pw-error" aria-live="polite"></span>
+                <div class = "required-note">Your password should have a minimum lenght of 8 characters</div>
+            </div>
+         <!--confirm password-->
+            <div class ="required-space">
+                <label for="confirm-password">Confirm password:*</label>
+                <input type="password" id="confirm-password" class="confirm" placeholder="Confirm password" name="renakuai" required>
+                <span class = "pw-confirm-error" aria-live="polite"></span>
+            </div>
+          </div>
+        </form>
+     </div>
+    <div class="submit">
+      <button type="submit" id="submit">Sign up!</button>
+    </div>
+  </div>
+  </div>
+</body>
+</html>

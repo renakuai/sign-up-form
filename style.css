@@ -1,0 +1,141 @@
+body {
+    background-color: #F4F4F4;
+    font-family: 'Roboto Mono', monospace;
+}
+
+:root {
+  font-size: 16px;
+}
+
+.main-container {
+  display: flex;
+  align-content:center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 100px;
+  width: min(900px, 90vw);
+  border-radius: 8px;
+  box-shadow: 2px 2px 10px #D8D8D8;
+  flex-wrap: wrap;
+}
+
+.main-container > * {
+  padding: 24px;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#left-container {
+  background: linear-gradient(161.43deg, #9062F1 0%, #64CCE3 100%);
+  color: #fff;
+  flex: 1 1 0;
+  min-width: 200px;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+#right-container {
+  background-color: #fff;
+  color: #222;
+  flex: 2 1 0;
+  min-width: 350px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#logo {
+  display: flex;
+  justify-content: center;
+}
+
+#odin-logo {
+  height: auto;
+  width: auto;
+  max-width:80px;
+}
+
+#right-header {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+#right-body {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+form {
+  display: flex;
+  margin-top: 40px;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  gap: 16px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  font-size: .75rem;
+}
+
+.submit {
+  display: flex;
+  justify-content: right;
+  width: 100%;
+}
+
+.required-note {
+  font-size: .6rem;
+  opacity: .65;
+  width: 147px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.required-space {
+  display: flex;
+  flex-direction: column;
+}
+
+.email-error, 
+.pw-error,
+.pw-confirm-error {
+  font-size: .6rem;
+  color: #900;
+  width: 147px;
+}
+
+input {
+    -webkit-appearance: none;
+    appearance: none;
+    border: 1px solid #333;
+    margin: 0;
+    font-family: inherit;
+    font-size: .9rem;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+input:invalid{
+    border: 2px solid red;
+}
+
+input:active{
+    border: 1px solid purple;
+}
+
+
+
+
